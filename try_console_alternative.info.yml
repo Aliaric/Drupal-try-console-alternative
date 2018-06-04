@@ -1,0 +1,5 @@
+name: 'Try console alternative'
+type: module
+description: 'Another module from console commands'
+core: 8.x
+package: 'Custom'

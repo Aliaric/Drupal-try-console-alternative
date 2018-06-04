@@ -1,0 +1,8 @@
+<?php
+/**
+ * Implements hook_update_N() on Module try_console_alternative Update # 8001.
+ */
+function try_console_alternative_update_8001(&$sandbox) {
+    drupal_set_message('Module try_console_alternative Update # 8001 () was executed successfully.');
+}
+

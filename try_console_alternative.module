@@ -1,0 +1,37 @@
+<?php
+
+/**
+ * @file
+ * Contains try_console_alternative.module.
+ */
+
+use Drupal\Core\Routing\RouteMatchInterface;
+
+/**
+ * Implements hook_help().
+ */
+function try_console_alternative_help($route_name, RouteMatchInterface $route_match) {
+  switch ($route_name) {
+    // Main module help for the try_console_alternative module.
+    case 'help.page.try_console_alternative':
+      $output = '';
+      $output .= '<h3>' . t('About') . '</h3>';
+      $output .= '<p>' . t('Another module from console commands') . '</p>';
+      return $output;
+
+    default:
+  }
+}
+
+use Drupal\Core\Form\FormStateInterface;
+
+/**
+ * Implements hook_form_alter() on behalf of try_console_alternative.module.
+ */
+function try_console_alternative_form_alter(&$form, FormStateInterface $form_state, $form_id) {
+    // Change form id here
+    if ($form_id == 'alternative_form') {
+        drupal_set_message('form_test_form_alter() executed.');
+
+    }
+}

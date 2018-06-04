@@ -1,0 +1,9 @@
+
+try_console_alternative.alternative_form:
+  path: '/alternative/form/default'
+  defaults:
+    _form: '\Drupal\try_console_alternative\Form\AlternativeForm'
+    _title: 'AlternativeForm'
+  requirements:
+    _access: 'TRUE'
+  

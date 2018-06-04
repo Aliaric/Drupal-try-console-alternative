@@ -1,0 +1,10 @@
+services:
+  try_console_alternative.default:
+    class: Drupal\try_console_alternative\EventSubscriber\AlternatieSubscriber
+    arguments: []
+    tags:
+      - { name: event_subscriber }
+
+  try_console_alternative_special.default:
+    class: Drupal\try_console_alternative\AlternativeService
+    arguments: []
